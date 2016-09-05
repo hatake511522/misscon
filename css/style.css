@@ -1,0 +1,114 @@
+body{
+  font-family:  font-family: 'M+ C Type-1 (basic latin) Regular', 'M+ Type-1 (general-j) Regular', sans-serif;
+}
+
+h2{
+  font-family: serif;
+}
+
+.mp0{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  height:900px;
+  border: solid 1px #ccc;
+  padding-top:300px;
+  background-image: url(../img/station.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header h2, header h1, header h2 small{
+  color: white;
+  text-shadow: 10px 1px 1px solid #000;
+}
+/********************************************/
+/*                 slide                    */
+/********************************************/
+a {
+	padding-top: 60px;
+}
+a span {
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	width: 24px;
+	height: 24px;
+	margin-left: -12px;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-animation: sdb 2s infinite;
+	animation: sdb 2s infinite;
+	box-sizing: border-box;
+}
+@-webkit-keyframes sdb {
+	0% {
+		-webkit-transform: rotate(-45deg) translate(0, 0);
+	}
+	20% {
+		-webkit-transform: rotate(-45deg) translate(-10px, 10px);
+	}
+	40% {
+		-webkit-transform: rotate(-45deg) translate(0, 0);
+	}
+}
+@keyframes sdb {
+	0% {
+		transform: rotate(-45deg) translate(0, 0);
+	}
+	20% {
+		transform: rotate(-45deg) translate(-10px, 10px);
+	}
+	40% {
+		transform: rotate(-45deg) translate(0, 0);
+	}
+}
+
+.pic{
+  margin-top:20px;
+  margin-bottom:20px;
+  background-color: grey;
+}
+
+.pic img{
+  margin-top:30px;
+  margin-bottom:30px;
+}
+
+.pic img a{
+
+}
+
+.pic img a:hover{
+
+}
+
+.article{
+  width: 50%;
+  background-color: grey;
+  color:white;
+  font-size:20px;
+  padding-top:50px;
+  padding-bottom:50px;
+  padding-left:20px;
+  padding-right:20px;
+  margin-top:50px;
+}
+
+.link{
+  font-size: 30px;
+  text-align:center;
+  margin-bottom: 30px;
+}
+
+/*****************************************/
+/*              hiroki                   */
+/*****************************************/
+.member{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}

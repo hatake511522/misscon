@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>misscon</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--custmize-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--webfont-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <!--jquery-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+	     $('a[href^=#]').click(function(){
+    		var speed = 500;
+    		var href= $(this).attr("href");
+    		var target = $(href == "#" || href == "" ? 'html' : href);
+    		var position = target.offset().top;
+    		$("html, body").animate({scrollTop:position}, speed, "swing");
+    		return false;
+    	});
+    });
+    </script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <header class="text-center">
+          <h2>金町食文化研究会<small>presents</small></h2><br>
+          <h1>Misscon meets KANAMACHI Food</h1><br>
+          <h1>ぼくとわたしと金町ごはん</h1>
+        </header>
+
+      </div>
+      <a href="#scroll"><span></span></a>
+        <div class="row pic" id="scroll">
+        <div class="col-md-12 col-xs-12 text-center">
+          <a href="takamina.html"><img src="img/takamina1.png" alt=""  width="500"/></a>
+        </div>
+        <div class="col-md-6 col-xs-12 text-center">
+          <a href="tsubasa.html"><img src="img/tsubasa1.png" alt=""  width="500"/></a>
+        </div>
+        <div class="col-md-6 col-xs-12 text-center">
+          <a href="hiroki.html"><img src="img/hiroki1.png" alt="" width="500"/></a>
+        </div>
+      </div>
+      <p class="article">
+        ミスコン。
+        <br>それは言わずとしれた
+        <br>大学イチイケてる学生を決めるイベントだ。
+        <br>それぞれの個性を存分に発揮する、そんな場であるはずのミスコンは
+        <br>カフェでの自撮り、仲間との水着ショットと
+        <br>いつしか「ありふれたおしゃれショット」で溢れた。
+        <br>学生だからこそ
+        <br>そして、下町のご飯を追求する私達だからこそ
+        <br>ミスコン候補者の
+        <br>よりキュートで、よりイケメンで、よりリアルな
+        <br>そんな一面をお届けすることができるだろう。
+        <br>葛飾キャンパスが葛飾区・金町にできて4年目。
+        <br>いままさに進化をしようとする金町と、東京理科大学の化学反応。
+        <br>とくとご賞味あれ！
+      </p>
+    </div>
+  </div>
+  <p class="link"><a href="http://google.com">link</a></p>
+  </body>
+</html>
