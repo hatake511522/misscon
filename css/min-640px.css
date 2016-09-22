@@ -1,16 +1,6 @@
 body{
 }
-@font-face {
-   font-family: HR;
-   src: url('../fonts/amemuchigothic-b.ttf') format("opentype");
-}
 
-hr{
-  color: orange;
-  border-width: thick;
-  width: 900px;
-  top: 20%;
-}
 .row{
   margin-right: -15px;
   margin-left: -15px;
@@ -20,16 +10,16 @@ hr{
 /*                 header                   */
 /********************************************/
 header{
-  height:980px;
+  height:720px;
   border: solid 1px #ccc;
-  padding-top:300px;
+  padding-top:200px;
   background-image: url(../img/station.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-header h2{
-  font-weight: 900;
+@font-face {
+   font-family: HR;
+   src: url('../fonts/amemuchigothic-b.ttf') format("opentype");
 }
 
 .hr{
@@ -40,14 +30,25 @@ header h2{
   font-family: 'Muli', sans-serif;
 }
 
+header h2{
+  font-size: 28px;
+  font-weight: lighter;
+}
 
-header h2, header h1, header h2 small ,header h1 small{
+
+header h2, header h1, header h2 small, header h1 small{
   color: white;
   text-shadow: 10px 5px 5px solid #000;
 }
+
+header h1 small{
+  position: absolute;
+  top: 52%;
+  left: 40%;
+}
 header h1{
   font-family: 'Muli', sans-serif;
-  font-size: 55px;
+  font-size: 35px;
 }
 
 
@@ -98,51 +99,68 @@ a span {
 /********************************************/
 /*                 article                  */
 /********************************************/
+@media (min-width: 370px) {
 
 .article{
-  height: 980px;
-  font-size:30px;
-  line-height: 200%;
+  font-size:17px;
+  line-height: 160%;
+  padding-left: 30px;
+  padding-right: 30px;
   margin-top: 20px;
-  padding-top:80px;
-  padding-bottom:60px;
-  padding-left:20px;
-  padding-right:20px;
-  text-align: center;
+  text-align: left;
   position: relative;
-  text-shadow: 1px 1px 1px #ccc;
+  /*text-shadow: 1px 1px 1px #ccc;*/
 }
+}
+
+@media(max-width: 369px){
+  .article{
+    font-size:14.4px;
+    line-height: 170%;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 20px;
+    padding-top:60px;
+    padding-bottom:20px;
+    text-align: left;
+    position: relative;
+    /*text-shadow: 1px 1px 1px #ccc;*/
+  }
+}
+
 /********************************************/
 /*                 pic                      */
 /********************************************/
 
 .pic{
-  height: 980px;
   background-color: white;
 }
 
 .pic img{
-  padding-top: 200px;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-.pic a:hover{
-  opacity: 0.7;
-  transition-duration: 0.3s;
-  -webkit-transition: .3s;
-}
 figure{
   display: table;
 }
 
 figcaption{
   color: white;
-  font-size: 30px;
+  font-size: 20px;
   text-shadow: 1px 1px 1px #000;
   position: absolute;
-  top:70%;
-  left: 60%;
+  top:50%;
+  left: 50%;
 }
 
+
+footer{
+  margin-top: 50px;
+  color: white;
+  background-color: #e23611;
+}
 
 /*****************************************/
 /*              hiroki                   */

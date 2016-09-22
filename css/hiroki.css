@@ -1,0 +1,32 @@
+body{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+p{
+
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+.member{
+  padding-bottom: 50px;
+}
+figure{
+  display: table;
+}
+
+figcaption{
+  color: white;
+  font-size: 30px;
+  text-shadow: 1px 1px 1px #000;
+  position: absolute;
+  top:20%;
+  left: 15%;
+}
+
+ul li{
+  list-style: none;
+  font-size: 20px;
+}
