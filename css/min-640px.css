@@ -41,15 +41,11 @@ header h2, header h1, header h2 small, header h1 small{
   text-shadow: 10px 5px 5px solid #000;
 }
 
-header h1 small{
-  position: absolute;
-  top: 52%;
-  left: 40%;
-}
 header h1{
   font-family: 'Muli', sans-serif;
   font-size: 35px;
 }
+
 
 
 /********************************************/
@@ -109,7 +105,7 @@ a span {
   margin-top: 20px;
   text-align: left;
   position: relative;
-  /*text-shadow: 1px 1px 1px #ccc;*/
+	text-justify: inter-ideograph;
 }
 }
 
@@ -124,7 +120,7 @@ a span {
     padding-bottom:20px;
     text-align: left;
     position: relative;
-    /*text-shadow: 1px 1px 1px #ccc;*/
+	text-justify: inter-ideograph;
   }
 }
 
@@ -156,11 +152,6 @@ figcaption{
 }
 
 
-footer{
-  margin-top: 50px;
-  color: white;
-  background-color: #e23611;
-}
 
 /*****************************************/
 /*              hiroki                   */
