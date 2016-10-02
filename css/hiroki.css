@@ -3,7 +3,8 @@ body{
   padding-right: 20px;
   margin: 0;
   width:100%;
-	height:100vh;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 ul li{
@@ -29,27 +30,27 @@ ul li a:hover{
     background-color: #f24817; /*メニュー背景色*/
     box-sizing: border-box;
     height: 100%;
-    padding: 10px 40px; /*メニュー内左右上下余白*/
+    padding: 10px 10px; /*メニュー内左右上下余白*/
     position: fixed;
     right: -280px; /*メニュー横幅 width と合わせる*/
     top: 0;
     transition: transform 0.2s linear 0s; /*0.3s はアニメーションにかかる時間*/
     width: 280px; /*メニュー横幅*/
     z-index: 1000;
-
-}
-.now{
-  color: grey;
 }
 
 #ham-menu ul li{
-  font-size: 30px;
+  font-size: 25px;
   color: #fff;
-  line-height: 3em;
+  line-height: 1.5em;
   list-style: none;
+  padding-top: 10px;
+  padding-bottom: 50px;
 }
 
-
+.now{
+  color: grey;
+}
 
 #ham-menu ul a:hover{
   text-decoration: none;
@@ -108,13 +109,9 @@ ul li a:hover{
 }
 
 .now{
-  opacity: 0.1;
+  opacity: 0.3;
 }
 
-.contact ul li{
-  list-style: none;
-  font-size: 20px;
-}
 /****************************/
 /*         header           */
 /****************************/
@@ -123,12 +120,24 @@ ul li a:hover{
 }
 
 .name{
+  font-size: 65px;
   font-family: 'Muli', sans-serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /****************************/
 /*         article          */
 /****************************/
+
+
+/****************************/
+/*         contact          */
+/****************************/
+.contact ul li{
+  list-style: none;
+  font-size: 20px;
+}
 
 /****************************/
 /*          button          */
@@ -170,7 +179,9 @@ ul li a:hover{
   font-size: 30px;
   text-align: center;
 }
+
 .button:hover {
+  text-decoration: none;
 	color: #fff;
 }
 .button::after {
