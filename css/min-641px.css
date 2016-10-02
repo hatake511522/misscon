@@ -10,7 +10,7 @@ body{
 /*                 header                   */
 /********************************************/
 header{
-  height:1024px;
+  min-height:100%;  
   border: solid 1px #ccc;
   padding-top:300px;
   background-image: url(../img/station.jpg);

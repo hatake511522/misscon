@@ -8,19 +8,18 @@ body{
 hr{
   color: orange;
   border-width: thick;
-  width: 900px;
+  width: 100%;
   top: 20%;
 }
+
 .row{
   margin-right: -15px;
   margin-left: -15px;
   margin-bottom: -15px;
 }
 
-.spinner {
-  margin: 100px auto 0;
-  width: 70px;
-  text-align: center;
+.full-height{
+  min-height: 100%;
 }
 /********************************************/
 /*                 loading                  */
@@ -31,9 +30,8 @@ hr{
 /*                 header                   */
 /********************************************/
 header{
-  height:980px;
+  width: 100%;
   border: solid 1px #ccc;
-  padding-top:300px;
   background-image: url(../img/station.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,10 +45,8 @@ header h2{
   font-family: HR;
 }
 
-
-
-
 header h2, header h1, header h2 small ,header h1 small{
+  top: 50%;
   color: white;
   text-shadow: 10px 5px 5px solid #000;
 }
@@ -109,7 +105,6 @@ a span {
 /********************************************/
 
 .article{
-  height: 980px;
   font-size:30px;
   line-height: 200%;
   margin-top: 20px;
@@ -124,10 +119,12 @@ a span {
 /********************************************/
 /*                 pic                      */
 /********************************************/
-
+.pic{
+  margin-top: 50px;
+}
 
 .pic img{
-  padding-top: 200px;
+  padding-top: 20px;
 }
 
 .pic a:hover{
@@ -136,15 +133,6 @@ a span {
   -webkit-transition: .3s;
 }
 .pic figure{
-}
-
-.pic figcaption{
-  color: white;
-  font-size: 30px;
-  text-shadow: 1px 1px 1px #000;
-  position: absolute;
-  top:70%;
-  left: 60%;
 }
 
 /*****************************************/
