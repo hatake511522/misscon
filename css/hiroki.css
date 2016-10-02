@@ -115,8 +115,10 @@ ul li a:hover{
 /****************************/
 /*         header           */
 /****************************/
+@media (min-width:1440px){
+
 .header p{
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .name{
@@ -124,6 +126,19 @@ ul li a:hover{
   font-family: 'Muli', sans-serif;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+}
+@media (max-width:1439px) {
+  .header p{
+    font-size: 20px;
+  }
+
+  .name{
+    font-size: 35px;
+    font-family: 'Muli', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 /****************************/
