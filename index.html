@@ -20,19 +20,6 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:400i" rel="stylesheet">
     <!--jquery-->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        $(function() {
-            $('a[href^=#]').click(function() {
-                var speed = 500;
-                var href = $(this).attr("href");
-                var target = $(href == "#" || href == "" ? 'html' : href);
-                var position = target.offset().top;
-                $("html, body").animate({
-                    scrollTop: position
-                }, speed, "swing");
-                return false;
-            });
-        });
     </script>
 </head>
 
@@ -46,10 +33,8 @@
                 <br>
                 <h2>ぼくとわたしと金町ごはん</h2>
             </header>
-
-        <a href="#scroll"><span></span></a>
         <div class="article">
-            <p id="scroll">ミスコン。</p>
+            <p>ミスコン。</p>
             <p>それは言わずとしれた 大学イチイケてる学生を決めるイベントだ。</p>
             <p>それぞれの個性を存分に発揮する、</p>
             <p>そんな場であるはずのミスコンは</p>
