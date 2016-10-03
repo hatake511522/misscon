@@ -5,6 +5,11 @@ body{
    src: url('../fonts/amemuchigothic-b.ttf') format("opentype");
 }
 
+.muli{
+  font-family: "Muli", sans-serif;
+
+}
+
 hr{
   color: orange;
   border-width: thick;
@@ -18,9 +23,6 @@ hr{
   margin-bottom: -15px;
 }
 
-.full-height{
-  min-height: 100%;
-}
 /********************************************/
 /*                 loading                  */
 /********************************************/
@@ -29,7 +31,11 @@ hr{
 /********************************************/
 /*                 header                   */
 /********************************************/
+@media (min-width:) {
+
+}
 header{
+  height: 100vh;
   width: 100%;
   border: solid 1px #ccc;
   background-image: url(../img/station.jpg);
@@ -46,7 +52,8 @@ header h2{
 }
 
 header h2, header h1, header h2 small ,header h1 small{
-  top: 50%;
+  position: relative;
+  top: 30%;
   color: white;
   text-shadow: 10px 5px 5px solid #000;
 }
