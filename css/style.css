@@ -47,19 +47,38 @@ header h2{
 .hr{
   font-family: HR;
 }
+@media (max-width: 980px) {
 
 header h2, header h1, header h2 small ,header h1 small{
   position: relative;
-  top: 20%;
+  top: 13%;
   color: white;
   text-shadow: 10px 5px 5px solid #000;
 }
 header h1{
   font-family: 'Muli', sans-serif;
-  font-size: 55px;
+  font-size: 45px;
 }
 
+header h2{
+  font-size: 27px;
+  text-shadow: 1px 1px 1px solid #000;
+}
+}
 
+@media (min-width:981px) {
+
+header h2, header h1, header h2 small ,header h1 small{
+position: relative;
+top: 20%;
+color: white;
+text-shadow: 10px 5px 5px solid #000;
+}
+header h1{
+font-family: 'Muli', sans-serif;
+font-size: 55px;
+}
+}
 /********************************************/
 /*                 slide                    */
 /********************************************/
@@ -107,18 +126,50 @@ a span {
 /********************************************/
 /*                 article                  */
 /********************************************/
+@media (max-width:370px) {
+  .article{
+    font-size:14px;
+    line-height: 200%;
+    margin-top: 20px;
+    padding-top:40px;
+    padding-bottom:40px;
+    padding-left:17px;
+    padding-right:17px;
+    text-align: center;
+    position: relative;
+  	text-justify: inter-ideograph;
+  }
+}
 
+
+@media (max-width:980px) and (min-width:371px){
 .article{
-  font-size:30px;
+  font-size:16px;
   line-height: 200%;
   margin-top: 20px;
-  padding-top:80px;
-  padding-bottom:60px;
+  padding-top:40px;
+  padding-bottom:40px;
   padding-left:20px;
   padding-right:20px;
   text-align: center;
   position: relative;
 	text-justify: inter-ideograph;
+}
+}
+
+@media (min-width:981px) {
+  .article{
+    font-size:30px;
+    line-height: 200%;
+    margin-top: 20px;
+    padding-top:80px;
+    padding-bottom:60px;
+    padding-left:20px;
+    padding-right:20px;
+    text-align: center;
+    position: relative;
+  	text-justify: inter-ideograph;
+  }
 }
 /********************************************/
 /*                 pic                      */
@@ -158,5 +209,5 @@ a span {
 /*              footer                   */
 /*****************************************/
 footer{
-  font-size: 20px;
+  font-size: 10px;
 }
