@@ -19,6 +19,10 @@ body{
     margin-right: 7px;
   }
 
+  .img-circle{
+    width: 60px;
+  }
+
   p{
     font-size: 15px;
   }
