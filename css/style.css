@@ -204,7 +204,6 @@ figure:hover figcaption {
   figcaption {
     color: white;
   	position: absolute;
-    font-size: 16px;
   	bottom: 0;
   	left: 0;
   	z-index: 2;
@@ -213,6 +212,9 @@ figure:hover figcaption {
   	background: rgba(0,0,0,.6);
   	-webkit-transition: .3s;
   	transition: .3s;
+  }
+  figcaption h3{
+    font-size: 18px;
   }
 }
 .pic img{
