@@ -1,3 +1,19 @@
+@font-face{
+  font-family: 'mplus-1p-regular';
+  src: url('http://mplus-webfonts.sourceforge.jp/mplus-1p-regular.eot');
+  src: url('http://mplus-webfonts.sourceforge.jp/mplus-1p-regular.eot?#iefix') format('embedded-opentype'),
+       url('http://mplus-webfonts.sourceforge.jp/mplus-1p-regular.woff') format('woff'),
+       url('http://mplus-webfonts.sourceforge.jp/mplus-1p-regular.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'zou';
+   src: url('../fonts/zou.otf') format("opentype");
+}
+
+html{
+  padding-right: -15px;
+}
+
 body{
   margin: 0;
   width:100%;
@@ -7,19 +23,33 @@ body{
   margin-right: -15px;
   margin-left: -15px;
 }
+
+header{
+  margin-left: -15px;
+  margin-right: -15px;
+}
+h6{
+  font-size: 10px;
+}
+.zou{
+  font-family: 'zou',sans-serif;
+}
 /*******************************/
 /*         media query         */
-/*******************************/ 
+/*******************************/
 @media (max-width:980px) {
   .article{
     padding-left: 30px;
     padding-right: 5px;
   }
   .img-circle{
-    width: 50px;
+    position: relative;;
+    width: 40px;
   }
   p{
-    font-size: 15px;
+    font-size: 12px;
+    font-family: 'mplus-1c-medium',sans-serif;
+    line-height: 280%;
   }
   .space{
     padding-bottom: 20px;
@@ -41,6 +71,8 @@ body{
   .img-responsive{
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
   iframe{
     width: 100%;
