@@ -58,17 +58,18 @@ p{
 
 @media (min-width:501px) {
   header{
-    height: 60vh
+    padding-top: 200px;
+    height: 100vh
     width: 100%;
-    background-image: url(../img/top_header.png);
+    background-image: url(../img/top_header2.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: 50% 50%;
   }
 
   header img{
     position: relative;
-    width: 45%;
+    width: 55%;
     left: 0;
     top: 15%;
   }
