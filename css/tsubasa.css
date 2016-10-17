@@ -34,6 +34,10 @@ h6{
 .zou{
   font-family: 'zou',sans-serif;
 }
+
+p{
+  font-family: 'mplus-1p-regular';
+}
 /*******************************/
 /*         media query         */
 /*******************************/
