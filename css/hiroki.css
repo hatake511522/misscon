@@ -1,11 +1,125 @@
+@font-face{
+  font-family: 'mplus-1p-regular';
+  src: url('http://mplus-webfonts.sourceforge.jp/mplus-1p-regular.eot');
+  src: url('http://mplus-webfonts.sourceforge.jp/mplus-1p-regular.eot?#iefix') format('embedded-opentype'),
+       url('http://mplus-webfonts.sourceforge.jp/mplus-1p-regular.woff') format('woff'),
+       url('http://mplus-webfonts.sourceforge.jp/mplus-1p-regular.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'zou';
+   src: url('../fonts/zou.otf') format("opentype");
+}
+
+html{
+  padding-right: -15px;
+}
+
 body{
-  padding-left: 20px;
-  padding-right: 20px;
   margin: 0;
   width:100%;
+}
+
+body{
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+header{
   margin-left: -15px;
   margin-right: -15px;
 }
+h6{
+  font-size: 10px;
+}
+.zou{
+  font-family: 'zou',sans-serif;
+}
+
+p{
+  font-family: 'mplus-1p-regular';
+}
+/*******************************/
+/*         media query         */
+/*******************************/
+@media (max-width:980px) {
+  .article{
+    padding-left: 30px;
+    padding-right: 5px;
+  }
+  .img-circle{
+    position: relative;;
+    width: 40px;
+  }
+  p{
+    font-size: 12px;
+    font-family: 'mplus-1c-medium',sans-serif;
+    line-height: 280%;
+  }
+  .space{
+    padding-bottom: 20px;
+  }
+  .top{
+    font-family: 'Muli',sans-serif;
+    font-size: 19px;
+    color: black;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .top a{
+    color: black;
+  }
+  .top a:hover{
+    text-decoration: none;
+  }
+  .img-responsive{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  iframe{
+    width: 100%;
+  }
+
+}
+
+@media (min-width:980px) {
+  .article{
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  .img-circle{
+    width: 70px;
+  }
+  p{
+    font-size: 20px;
+  }
+  .space{
+    padding-bottom: 30px;
+  }
+  .img-responsive{
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .top{
+    font-family: 'Muli',sans-serif;
+    font-size: 30px;
+    text-align: center;
+    width: 30%;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 100px;
+  }
+  .top a{
+    color: black;
+  }
+  .top a:hover{
+    text-decoration: none;
+  }
+}
+
+
 
 ul li{
   list-style: none;
@@ -23,188 +137,9 @@ ul li a:hover{
 
 }
 
-/***********************************/
-/*               nav               */
-/***********************************/
-#ham-menu {
-    background-color: #f24817; /*メニュー背景色*/
-    box-sizing: border-box;
-    height: 100%;
-    padding: 10px 10px; /*メニュー内左右上下余白*/
-    position: fixed;
-    right: -280px; /*メニュー横幅 width と合わせる*/
-    top: 0;
-    transition: transform 0.2s linear 0s; /*0.3s はアニメーションにかかる時間*/
-    width: 280px; /*メニュー横幅*/
-    z-index: 1000;
-}
-
-#ham-menu ul li{
-  font-size: 25px;
-  color: #fff;
-  line-height: 1.5em;
-  list-style: none;
-  padding-top: 10px;
-  padding-bottom: 50px;
-}
-
-.now{
-  color: grey;
-}
-
-#ham-menu ul a:hover{
-  text-decoration: none;
-  opacity: 0.1;
-  transition-delay: 0.2s;
-  transition-duration: 0.2s;
-}
-
-#menu-background {
-  background-color: #fff; /*背景は白*/
-  display: block;
-  height: 100%;
-  opacity: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  transition: all 0.2s linear 0s; /*0.3s はアニメーションにかかる時間*/
-  width: 100%;
-  z-index: -1;
-}
-
-#menu-icon {
-    background-color: #fff; /*アイコン部分背景色*/
-    color: #000; /*アイコン（フォント）色*/
-    cursor: pointer;
-    display: block;
-    font-size: 50px; /*アイコン（フォント）サイズ*/
-    height: 50px; /*アイコン縦高さ*/
-    line-height: 50px; /*縦位置中央化*/
-    position: fixed;
-    right: 0;
-    text-align: center;
-    top: 0;
-    width: 50px; /*アイコン横幅*/
-    transition: all 0.2s linear 0s; /*0.3s はアニメーションにかかる時間*/
-    z-index: 1000;
-}
-
-#menu-cb:checked{
-  display: none;
-  right: -20px;
-}
-
-#menu-cb {
-    display: none; /*チェックボックス本体は消しておく*/
-}
-
-#menu-cb:checked ~ #ham-menu,
-#menu-cb:checked ~ #menu-icon {
-    transform: translate(-280px); /*メニュー本体横幅 width と合わせる*/
-}
-
-#menu-cb:checked ~ #menu-background {
-    opacity: 0.5;
-    z-index: 999;
-}
-
-.now{
-  opacity: 0.3;
-}
-
 /****************************/
 /*         header           */
 /****************************/
-@media (min-width:1440px){
-
-.header p{
-  font-size: 25px;
-}
-
-.name{
-  font-size: 65px;
-  font-family: 'Muli', sans-serif;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-}
-@media (max-width:1439px) {
-  .header p{
-    font-size: 20px;
-  }
-
-  .name{
-    font-size: 35px;
-    font-family: 'Muli', sans-serif;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-}
-
-/****************************/
-/*         article          */
-/****************************/
-
-
-/****************************/
-/*         contact          */
-/****************************/
-.contact ul li{
-  list-style: none;
-  font-size: 20px;
-}
-
-/****************************/
-/*          button          */
-/****************************/
-.button {
-	display: inline-block;
-	width: 100%;
-	height: 54px;
-	text-align: center;
-	text-decoration: none;
-	line-height: 54px;
-	outline: none;
-}
-.button::before,
-.button::after {
-	position: absolute;
-	z-index: -1;
-	display: block;
-	content: '';
-}
-.button,
-.button::before,
-.button::after {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	-webkit-transition: all .3s;
-	transition: all .3s;
-}
-
-.button {
-	position: relative;
-	z-index: 2;
-	background-color: #fff;
-	border: 2px solid #333;
-	color: #333;
-	line-height: 50px;
-	overflow: hidden;
-  font-size: 30px;
-  text-align: center;
-}
-
-.button:hover {
-  text-decoration: none;
-	color: #fff;
-}
-.button::after {
-	top: -100%;
-	width: 100%;
-	height: 100%;
-}
-.button:hover::after {
-	top: 0;
-	background-color: #333;
+.header{
+  padding-top: 50px;
 }
