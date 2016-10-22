@@ -2,24 +2,20 @@
    font-family: 'zou';
    src: url('../fonts/zou.otf') format("opentype");
 }
-
-html{
-  padding-right: -15px;
-}
-
 body{
   margin: 0;
   width:100%;
-}
-
-body{
-  margin-right: -15px;
-  margin-left: -15px;
   font-family:
     'M+ C Type-1 (basic latin) Regular',
-    'M+ Type-1 (general-j) Regular', sans-serif;
+    'M+ Type-1 (general-j) Light', sans-serif;
+    margin-right: -15px;
+    margin-left: -15px;
 }
 
+strong{
+  font-family: 'M+ C Type-1 (basic latin) Heacy',
+  'M+ Type-1 (general-j) Heavy', sans-serif;
+}
 header{
   margin-left: -15px;
   margin-right: -15px;
@@ -31,17 +27,39 @@ h6{
   font-family: 'zou',sans-serif;
 }
 
-p{
-  font-family: 'mplus-1p-regular';
-}
 /*******************************/
 /*         media query         */
 /*******************************/
 @media (max-width:980px) {
   header{
-    height: 50px;
-    margin-bottom: 20px;
+      margin-bottom: 20px;
+  }
 
+  .asset{
+      margin-top: -10px;
+      background-image: url(../img/hiroki-background.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  .asset img{
+    position: relative;
+    width: 100%;
+  }
+  .asset2{
+      margin-top: 15px;
+      background-image: url(../img/takaminaasset-1.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  .asset2 img{
+    width: 80%;
+    position: relative;
+    left:8%;
+  }
+
+  .profile{
+    margin-bottom: 40px;
+    font-size: 18px;
   }
   .article{
     padding-left: 30px;
@@ -50,12 +68,13 @@ p{
   .img-circle{
     position: relative;;
     width: 40px;
-    height: 40px; 
   }
   p{
-    font-size: 12px;
-    font-family: 'mplus-1c-medium',sans-serif;
-    line-height: 280%;
+    font-size: 13px;
+    line-height: 250%;
+  }
+  h4{
+    font-size:11px;
   }
   .space{
     padding-bottom: 20px;
@@ -83,12 +102,42 @@ p{
   iframe{
     width: 100%;
   }
-
 }
-
+/********************************************************/
 @media (min-width:980px) {
   header{
-    margin-bottom: 20px;
+      margin-bottom: 20px;
+  }
+  .asset{
+    width: 100%;
+      background-image: url(../img/hiroki-background.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-bottom: 20px;
+  }
+  .asset img{
+    width: 90%;
+    position: relative;
+  }
+  .asset2{
+    margin-top: 80px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+      background-image: url(../img/takaminaasset-1.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  .asset2 img{
+    width: 100%;
+    position: relative;
+    left:5%;
+    top: 5%;
+  }
+  .profile{
+    margin-top: -50px;
+    margin-bottom: 70px;
+    font-size: 18px;
   }
   .article{
     margin-left: 200px;
@@ -104,8 +153,7 @@ p{
     padding-bottom: 30px;
   }
   .img-responsive{
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 80px;
   }
   .top{
     font-family: 'Muli',sans-serif;
@@ -122,29 +170,21 @@ p{
   .top a:hover{
     text-decoration: none;
   }
-}
-
-
-
-ul li{
-  list-style: none;
-}
-
-ul li a{
-  text-decoration: none;
-  color: orange;
-}
-
-ul li a:hover{
-  text-decoration: none;
-  color: inherit;
-  opacity: 0.2;
-
+  .minus{
+    margin-top: -20px;
+  }
 }
 
 /****************************/
-/*         header           */
+/*            link          */
 /****************************/
-.header{
-  padding-top: 50px;
+.link{
+  margin-top: 50px;
+}
+/****************************/
+/*            btn           */
+/****************************/
+.btn{
+  padding-left: 30px;
+  padding-right: 30px;
 }
