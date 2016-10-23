@@ -3,6 +3,8 @@
    src: url('../fonts/zou.otf') format("opentype");
 }
 body{
+  margin-left: auto;
+  margin-right: auto;
   margin: 0;
   width:100%;
   font-family:
@@ -12,11 +14,13 @@ body{
     margin-left: -15px;
 }
 
+
 strong{
-  font-family: 'M+ C Type-1 (basic latin) Heacy',
+  font-family: 'M+ C Type-1 (basic latin) Heavy',
   'M+ Type-1 (general-j) Heavy', sans-serif;
 }
 header{
+  text-align: center;
   margin-left: -15px;
   margin-right: -15px;
 }
@@ -27,6 +31,12 @@ h6{
   font-family: 'zou',sans-serif;
 }
 
+.btn{
+  width: 120px;
+  text-shadow: 1px 1px 1px #ccc;
+  margin-bottom: 50px;
+}
+
 /*******************************/
 /*         media query         */
 /*******************************/
@@ -34,7 +44,6 @@ h6{
   header{
       margin-bottom: 20px;
   }
-
   .asset{
       margin-top: -10px;
       background-image: url(../img/hiroki-background.jpg);
@@ -44,26 +53,25 @@ h6{
   .asset img{
     position: relative;
     width: 100%;
+    left: 20%;
   }
   .asset2{
-      margin-top: 15px;
+      margin-top: 10px;
       background-image: url(../img/takaminaasset-1.png);
       background-repeat: no-repeat;
       background-size: cover;
   }
   .asset2 img{
-    width: 80%;
     position: relative;
-    left:8%;
-  }
-
-  .profile{
-    margin-bottom: 40px;
-    font-size: 18px;
+    width: 100%;
   }
   .article{
     padding-left: 30px;
     padding-right: 5px;
+  }
+  .profile{
+    margin-bottom: 40px;
+    font-size: 18px;
   }
   .img-circle{
     position: relative;;
@@ -71,6 +79,7 @@ h6{
   }
   p{
     font-size: 13px;
+    font-family: 'mplus-1c-medium',sans-serif;
     line-height: 250%;
   }
   h4{
@@ -102,46 +111,56 @@ h6{
   iframe{
     width: 100%;
   }
+
 }
-/********************************************************/
+/*******************************************************/
 @media (min-width:980px) {
   header{
       margin-bottom: 20px;
   }
+
   .asset{
-    width: 100%;
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
       background-image: url(../img/hiroki-background.jpg);
       background-repeat: no-repeat;
-      background-size: contain;
-      margin-bottom: 20px;
+      background-size: cover;
   }
   .asset img{
     width: 90%;
     position: relative;
+    top: 2%;
   }
   .asset2{
-    margin-top: 80px;
+    margin-top: 10px;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
       background-image: url(../img/takaminaasset-1.png);
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
   }
   .asset2 img{
-    width: 100%;
     position: relative;
-    left:5%;
-    top: 5%;
+    width: 80%;
+    top: 20%;
+    left: 3%;
+  }
+  .asset2 a:hover{
+    transition-duration: 0.2s;
+    transition-delay: 0.2s;
+    opacity: 0.5;
+  }
+  .article{
+    line-height: 250%;
+    margin-left: 200px;
+    margin-right: 200px;
   }
   .profile{
     margin-top: -50px;
     margin-bottom: 70px;
     font-size: 18px;
-  }
-  .article{
-    margin-left: 200px;
-    margin-right: 200px;
   }
   .img-circle{
     width: 70px;
@@ -149,11 +168,14 @@ h6{
   p{
     font-size: 20px;
   }
+  h4{
+    font-size: 14px;
+  }
   .space{
     padding-bottom: 30px;
   }
   .img-responsive{
-    padding-bottom: 80px;
+    margin-bottom: 50px;
   }
   .top{
     font-family: 'Muli',sans-serif;
@@ -171,7 +193,10 @@ h6{
     text-decoration: none;
   }
   .minus{
-    margin-top: -20px;
+    margin-top: -30px;
+  }
+  iframe{
+    width: 100%;
   }
 }
 
