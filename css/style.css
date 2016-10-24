@@ -39,7 +39,7 @@ h1{
 /********************************************/
 /*                 header                   */
 /********************************************/
-@media (max-width: 500px) {
+@media (max-width: 980px) {
   header{
     min-height: 100%;
     height: 100vh;
@@ -57,7 +57,7 @@ h1{
   }
 }
 
-@media (min-width:501px) {
+@media (min-width:981px) {
   header{
     width: 100%;
     padding-left: 50px;
