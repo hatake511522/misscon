@@ -2,27 +2,19 @@
    font-family: 'zou';
    src: url('../fonts/zou.otf') format("opentype");
 }
+
 body{
-  margin-left: auto;
-  margin-right: auto;
-  margin: 0;
-  width:100%;
+  margin: 0 auto;
+  width: 100%;
   font-family:
     'M+ C Type-1 (basic latin) Regular',
     'M+ Type-1 (general-j) Light', sans-serif;
-    margin-right: -15px;
-    margin-left: -15px;
 }
 
 
 strong{
   font-family: 'M+ C Type-1 (basic latin) Heavy',
   'M+ Type-1 (general-j) Heavy', sans-serif;
-}
-header{
-  text-align: center;
-  margin-left: -15px;
-  margin-right: -15px;
 }
 h6{
   font-size: 10px;
@@ -31,20 +23,22 @@ h6{
   font-family: 'zou',sans-serif;
 }
 
-.btn{
-  width: 120px;
-  text-shadow: 1px 1px 1px #ccc;
-  margin-bottom: 50px;
-}
 
 /*******************************/
 /*         media query         */
 /*******************************/
 @media (max-width:980px) {
+  .container{
+    width: 100%;
+    overflow: hidden;
+    padding-right: 40px;
+  }
   header{
       margin-bottom: 20px;
   }
   .asset{
+      width: 100%;
+      margin: 0 auto;
       margin-top: -10px;
       background-image: url(../img/hiroki-background.jpg);
       background-repeat: no-repeat;
@@ -53,13 +47,15 @@ h6{
   .asset img{
     position: relative;
     width: 100%;
-    left: 20%;
+    padding-top: 6%;
   }
   .asset2{
+    width: auto;
       margin-top: 10px;
       background-image: url(../img/takaminaasset-1.png);
       background-repeat: no-repeat;
       background-size: cover;
+      background-position: center center;
   }
   .asset2 img{
     position: relative;
@@ -78,7 +74,7 @@ h6{
     width: 40px;
   }
   p{
-    font-size: 13px;
+    font-size: 14px;
     font-family: 'mplus-1c-medium',sans-serif;
     line-height: 250%;
   }
@@ -105,11 +101,18 @@ h6{
   .img-responsive{
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   iframe{
     width: 100%;
+  }
+
+  .btn{
+    width: 50px;
+    text-shadow: 1px 1px 1px #ccc;
+    margin-bottom: 50px;
+
   }
 
 }
@@ -198,6 +201,13 @@ h6{
   iframe{
     width: 100%;
   }
+
+  .btn{
+    width: 120px;
+    text-shadow: 1px 1px 1px #ccc;
+    margin-bottom: 50px;
+
+  }
 }
 
 /****************************/
@@ -205,11 +215,8 @@ h6{
 /****************************/
 .link{
   margin-top: 50px;
+  margin-left: 7px;
 }
 /****************************/
 /*            btn           */
 /****************************/
-.btn{
-  padding-left: 30px;
-  padding-right: 30px;
-}

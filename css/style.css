@@ -3,18 +3,9 @@ body{
   margin-right: auto;
 }
 @font-face {
-   font-family: HR;
-   src: url('../fonts/amemuchigothic-b.ttf') format("opentype");
-}
-@font-face {
    font-family: 'zou';
    src: url('../fonts/zou.otf') format("opentype");
 }
-
-.muli{
-  font-family: "Muli", sans-serif;
-}
-
 .row{
   margin-right: -15px;
   margin-left: -15px;
@@ -79,7 +70,7 @@ h1{
 
   header img{
     position: relative;
-    width: 65%;
+    width: 60%;
     left: 0;
     top: 10%;
   }
